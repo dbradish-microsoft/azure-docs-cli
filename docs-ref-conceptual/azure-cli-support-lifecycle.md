@@ -51,7 +51,23 @@ The Azure CLI has two kinds of support:
   - Applies to the last version _before_ the spring breaking change release.
   - Remains supported and receives security fixes for 12 months.
 
-Here is an example of how the release schedule and support work together:
+Run [az verion]() to see what version is currently STS and LTS.
+
+```azurecli-interactive
+az version
+```
+
+```output
+{ 
+  "azure-cli": "2.48.0", 
+  "azure-cli-core": "2.48.0", 
+  "azure-cli-support": "LTS-20240430", 
+  "azure-cli-telemetry": "1.0.8", 
+  "extensions":
+} 
+```
+
+Here is an **made-up example** of how the release schedule and support work together. These version numbers are given for illustration.
 
 |Release number|Release month|Is breaking change?|STS version|LTS version
 |-|-|-|-|-|
@@ -72,7 +88,6 @@ In this example, if you are using the Azure CLI version `2.40.1` in January, you
 > [!IMPORTANT] You must have the latest patch update installed to qualify for support.
 
 PowerShell - when a version ships with a particular name, it is supported for 18 months. Customer must be on latest minor release.
-
 
 
 
