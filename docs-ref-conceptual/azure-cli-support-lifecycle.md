@@ -69,18 +69,21 @@ az version
 
 Here is an **made-up example** of how the release schedule and support work together. These version numbers are given for illustration.
 
-|Release number|Release month|Is breaking change?|STS version|LTS version
-|-|-|-|-|-|
+NOTE: Why do we use "breaking change" vs "major revision change"?
+NOTE: Shouldn't this table reflect real versions and dates, and be updated at each release?
+
+|Release number|Release month|Is major revision change?|STS version|LTS version | Support ends on
+|-|-|-|-|-|-|
 |2.40.1|January| |2.40.1||
 |2.41.0|February||2.41.0||
 |2.42.0|March||2.42.0||
-|2.42.1 `patch`|March||`2.42.1`|
+|2.42.1 `patch`|March 2023 ||`2.42.1`| 2024-03-01
 |3.10.0|April|yes|3.10.0|`2.42.1`|
 |3.20.0|May||3.20.0|2.42.1
 |3.xx.x|June to August||3.xx.x|2.42.1
 |4.01.0|September|yes|4.01.0|2.42.1
 |4.xx.x|October to February| |4.xx.x|2.42.1
-|4.53.0|March||`4.53.0`|2.42.1
+|4.53.0|March||`4.53.0`|2.42.1 | 2025-04-01
 |5.01.0|April|yes|5.01.1|`4.53.0`
 
 In this example, if you are using the Azure CLI version `2.40.1` in January, you must upgrade to version `2.41.0` to receive STS in February. To receive STS in May, you must upgrade to version `3.20.0`, or for LTS, `2.43.3`.
@@ -88,8 +91,6 @@ In this example, if you are using the Azure CLI version `2.40.1` in January, you
 > [!IMPORTANT] You must have the latest patch update installed to qualify for support.
 
 PowerShell - when a version ships with a particular name, it is supported for 18 months. Customer must be on latest minor release.
-
-
 
 ## Azure CLI supported platforms
 
